@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="PaginaDois.html">
+
+</head>
+<style type="text/css">
+	p{
+		text-align: center;
+		font-family: arial;
+		font-size: 18px;
+	}
+</style>
+<body >
+	<div class="container-fluid">
+	
+
+			<!-- modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="rotulo do modal">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							
+         					  <h5 class="modal-title" id="BSA"><b>Rick and Morty</b></h5>
+						</div>
+						<div class="modal-body">
+							<div class="thumbnail">
+		                       <img src="https://img.jovempan.uol.com.br/uploads/2019/05/rick-and-morty-season-4.png" alt="Rick and Morty">
+	             			</div>
+		             			<p>
+
+		             				Essa é uma animação adulta até para muitos adultos. Ele discute temas familiares da maneira mais crua, usando artifícios de sci-fi para tornar tudo mais amenizado ou potencializado. Quando a história é das consequências de um desejo egoísta o roteiro acaba com toda aquela realidade, transformando os humanos em monstros. Quando quer discutir feminismo, adentra em um mundo onde mulheres usam os homens apenas para o que eles servem: aparelhos de esperma (aparentemente a genialidade feminina nesse planeta não conseguiu realizar inseminações artificiais). Cada episódio de 20 minutos revela uma faceta bruta da natureza humana, mostrando como somos primitivos em alguns detalhes. Cerca de 99,9%.
+
+		             			</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" id="close2" onclick="location.href = 'PaginaDois.html' class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+						</div>
+					</div>
+				</div>				
+			</div>
+</div>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+<!-- ABRIR INFORMAÇÕES E IMAGENS EM UM MODAL DE CADA PATRIMONIO -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/*CARREGANDO O MODAL QUANDO ATUALIZAR A PAGINA*/
+			$('#myModal').modal('show'); 
+			/*REDIRECIONAR PARA A DIV PATRIMONIO QUANDO CLOCAR PARA FECHAR MODAL*/
+			document.getElementById("close2").onclick = function () {
+		        location.href = "PaginaDois.html";
+		    };
+		});
+	</script>
+</body>
+</html>
